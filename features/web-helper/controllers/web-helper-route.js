@@ -7,8 +7,8 @@ if (!process.env.WEB_HELPER || process.env.WEB_HELPER != 'true') {
 }
 
 var TEMPLATES = {
-      enter: ['$BodyDataService', '$Layout', (function($BodyDataService, $Layout) {
-        document.title = '{{title}} - ' + $BodyDataService.data('web').brand;
+      enter: ['$Page', '$Layout', (function($Page, $Layout) {
+        document.title = '{{title}} - ' + $Page.get('web').brand;
 
         var requires = '{{requires}}'.split(';');
 
