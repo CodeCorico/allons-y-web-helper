@@ -16,6 +16,12 @@
   },
   "dependencies": {
     "allons-y-web": "^1.0.0",
-    "fs-extra": "^0.30.0"
-  }
+    "fs-extra": "^0.30.0",
+    "snyk": "^1.88.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
